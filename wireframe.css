@@ -1,0 +1,220 @@
+@charset "UTF-8";
+/* CSS Document */
+
+@font-face {
+  font-family: Pacifico;
+  src: url("../a3/fonts/Pacifico-Regular.ttf")
+}
+
+@font-face {
+  font-family: Oxygen;
+  src: url("../a3/fonts/Oxygen-Regular.ttf")
+}
+
+/* Original CSS code sourced and adapted for educational purposes and changed accordingly: https://www.w3schools.com/w3css/w3css_slideshow.asp and http://qnimate.com/creating-a-slider-using-html-and-css-only/#prettyPhoto */
+.slider-holder
+        {
+            width: 1200px;
+            height: 600px;
+            max-width: 100%;
+            background-color: yellow;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 0px;
+            text-align: center;
+            overflow: hidden;
+          }
+            
+        .image-holder
+        {
+            width: 4800px;
+            background-color: red;
+            height: 600px;
+            clear: both;
+            position: relative;
+            -webkit-transition: left 2s;
+            -moz-transition: left 2s;
+            -o-transition: left 2s;
+            transition: left 2s;
+        }
+
+        .slider-image
+        {
+            float: left;
+            margin: 0px;
+            padding: 0px;
+            position: inherit;
+            animation: slide 70s infinite;
+        }
+        
+        #slider-image-1:target ~ .image-holder
+        {
+            left: 0px;
+        }
+        
+        #slider-image-2:target ~ .image-holder
+        {
+            left: -1200px;
+        }
+        
+        #slider-image-3:target ~ .image-holder
+        {
+            left: -2400px;
+        }
+        
+        #slider-image-4:target ~ .image-holder
+        {
+            left: -3600px;
+        }
+        
+        @keyframes slide {
+          0% {left: 0px;}
+          25%{left: -1200px;}
+          50% {left: -2400px;}
+          75%{left: -3600px;}
+          100%{right: 0px;}
+        }
+
+header {
+  text-align: center;
+}
+
+h1 {
+  margin: 0px;
+  color: white;
+  font-family: Pacifico, Fallback, sans-serif;
+  font-size: 45pt;
+  text-align: center;
+}
+
+h2 {
+  color: white;
+  font-family: Pacifico, Fallback, sans-serif;
+  font-size: 22pt;
+}
+
+h2 a:hover, p a:hover {
+  color: lime;
+}
+
+h3 {
+  color: white;
+  font-family: Oxygen, Fallback, sans-serif;
+}
+
+p, em {
+	color: white;
+	font-family: Oxygen, Fallback, sans-serif;
+	font-size: 14pt;
+	}
+	
+p2, table {
+  color: white;
+  font-family: Oxygen, Fallback, sans-serif;
+  font-size: 12pt;
+}
+
+a:link, a:visited {
+  color: red;
+}
+
+li, legend {
+  color: white;
+  font-family: Oxygen, Fallback, sans-serif;
+}
+	
+header,
+main,
+footer
+{
+  margin: 5px;
+  padding: 5px;
+}
+
+body { 
+  background-color: hsl(0, 0%, 4%);
+  background-position: center top;
+  background-attachment: fixed;
+}
+
+.movie {
+  display: flex;
+  margin: 10px 10px;
+}
+
+.movieimg {
+  float: left;
+}
+
+.moviedetails {
+  float: right;
+  padding-left: 10px;
+}
+
+form p {
+  text-align: center;
+}
+
+nav {
+  border: 2px solid hsl(15, 99%, 28%);
+  background-color: hsl(0, 0%, 22%);
+  overflow: hidden;
+  width:auto;
+	font-family: Oxygen, Fallback, sans-serif;
+	font-size: 20px;
+	text-align: center;
+}
+
+nav a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+
+}
+
+nav a:link, a:visited {
+  background-position: center;
+  text-decoration: none;
+  display: inline-block;
+  padding: 14px 25px;
+}
+
+nav a:hover, a:active {
+  background-color: black;
+}
+
+hr { 
+  display: block;
+  margin: 0.5em auto;
+  border-style: inset;
+  border-width: 1px;
+}
+
+.tkt {
+  width: 200px;
+}
+
+.price {
+  width: 50px;
+}
+
+.qty{
+  width: 50px;
+}
+
+.subtotal {
+  width: 100px;
+}
+
+main {
+  padding: 10px;
+  background-color: hsl(0, 0%, 22%);
+}
+
+footer {
+  background-color: hsl(0, 0%, 22%);
+  border: 2px solid hsl(15, 99%, 28%);
+  color: hsl(0, 0%, 47%);
+}
+
+
